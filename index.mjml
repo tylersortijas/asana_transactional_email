@@ -1,0 +1,142 @@
+<mjml>
+  <mj-head>
+    <mj-raw>
+      <!-- Global Styling -->
+    </mj-raw>
+    <mj-style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .receipt-plan {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .link {
+        color: #4066B0;
+        text-decoration: none;
+      }
+
+      .asana-footer {
+        font-weight: bold;
+        color: gray;
+      }
+    </mj-style>
+    <mj-raw>
+      <!-- Inline Styling -->
+    </mj-raw>
+    <mj-style inline="inline">
+
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-text align="right" color="gray" padding="10px 35px 0">Thank you for using Asana.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Header Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-image target="_blank" alt="asana logo" href="https://asana.com/" padding="0 25px" src="./assets/logo.png" />
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- Start of Main Content -->
+    </mj-raw>
+    <mj-section>
+      <mj-column padding="0 20px">
+        <mj-text color="#5B6674" font-size="40px">Invoice Receipt</mj-text>
+        <mj-divider border-width="1px" border-color="lightgray" padding="20px 25px 0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- Invoice Section -->
+    </mj-raw>
+    <mj-section padding="0 30px 20px">
+      <mj-column>
+        <mj-text font-weight="bold" font-size="20px" padding="10px 25px 5px">Asana</mj-text>
+        <mj-text font-weight="bold" font-size="20px" padding="0 25px 10px">Invoice 1182311</mj-text>
+        <mj-text font-weight="bold" font-size="15px">James Lamont</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-weight="bold" align="right" font-size="15px">May 15, 2019</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="./components/divider.mjml" />
+
+    <mj-raw>
+      <!-- Receipt Content -->
+    </mj-raw>
+    <mj-section padding="0 30px 20px">
+      <mj-column>
+        <mj-text padding="0 25px 10px">This email confirms your recent payment of $239.80. Here are the details of your payment:</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-weight="bold" font-size="20px">Plan Details</mj-text>
+        <mj-text>Your Plan:<br /> <span class="receipt-plan">Organization 20 ($239.80)</span></mj-text>
+        <mj-text>Next invoice date:<br /> <span class="receipt-plan">Jun 15, 2019</span></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- Date and Total Amount Content -->
+    </mj-raw>
+    <mj-section padding="0 35px 20px">
+      <mj-column>
+        <mj-text font-weight="bold">Date</mj-text>
+        <mj-text>May 15 - Jun 15, 2019</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-weight="bold">Description</mj-text>
+        <mj-text align="right" padding="10px 3px">Organization 20</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-weight="bold">Amount</mj-text>
+        <mj-text align="right" font-weight="bold">$239.80</mj-text>
+        <mj-text align="right" font-weight="bold">Subtotal: $239.80</mj-text>
+        <mj-text align="right" font-weight="bold" padding="10px 25px 10px 0">Paid (ending in 4546): $239.80</mj-text>
+        <mj-text align="right" font-weight="bold">Total: $0.00</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="./components/divider.mjml" />
+
+    <mj-section>
+      <mj-column>
+        <mj-text padding="0 0 10px" align="center"><a href="https://asana.com/" target="_blank" class="link">View your invoice online.</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- Footer Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" color="gray">For questions about this email or your account, contact <a class="link">customer-service@asana.com.</a></mj-text>
+        <mj-text align="center"><span class="asana-footer">Asana</span> • <a class="link" href="https://www.google.com/maps/place/Hamm's+Building,+1550+Bryant+St,+San+Francisco,+CA+94103/@37.7675455,-122.4138177,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7e2f0ac32783:0x6c3a10c0317c4a87!8m2!3d37.7675413!4d-122.4112428!16s%2Fg%2F11bw3wt709?entry=ttu" target="_blank">1550 Bryant Street</a> • <a class="link" href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7675455,-122.4138177,17z/data=!4m2!3m1!1s0x80859a6d00690021:0x4a501367f076adff?entry=ttu" target="_blank">San Francisco, CA</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- Social Media Icons Section -->
+    </mj-raw>
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-image css-class="twitter-icon" align="right" padding="0 5px 30px" href="https://twitter.com/" src="./assets/twitter.png" alt="twitter logo" target="_blank" width="30px" />
+        </mj-column>
+        <mj-column>
+          <mj-image css-class="facebook-icon" align="left" padding="0 5px 30px" href="https://facebook.com/" src="./assets/facebook.png" alt="facebook logo" target="_blank" width="30px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>
